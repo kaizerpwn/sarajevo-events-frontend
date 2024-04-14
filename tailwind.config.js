@@ -3,6 +3,13 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+        sm: "480px",
+        md: "768px",
+        lg: "996px",
+        xl: "1440px"
+      },
       colors: {
         primaryColor: "#DEC2BA",
         secondaryColor: "#373334",

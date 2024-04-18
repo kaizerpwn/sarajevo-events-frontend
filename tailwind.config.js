@@ -13,7 +13,8 @@ module.exports = {
       colors: {
         primaryColor: "#DEC2BA",
         secondaryColor: "#373334",
-        backgroundDark: "#231F20"
+        backgroundDark: "#231F20",
+        cardColor: "#F0EDEE"
       },
       width: {
         "128": "width: 30rem"

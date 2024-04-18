@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarajevo Events</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <nav
+      class="flex items-center justify-between w-full h-32 font-bold uppercase bg-backgroundDark text-primaryColor"
+    >
+      <div class="w-full lg:w-[20%] flex justify-center ml-10 lg:ml-0">
+        <a href="index.html">
+          <img
+            src="./src/images/logo.png"
+            alt="logo of sarajevo events website"
+            class="h-32 bg-cover"
+          />
+        </a>
+      </div>
+      <div class="w-[60%] hidden justify-center lg:flex md:space-x-8">
+        <a href="#" class="transition duration-500 ease-in hover:text-white"
+          >Početna</a
+        >
+        <a href="#" class="transition duration-500 ease-in hover:text-white"
+          >Događaji</a
+        >
+        <a href="#" class="transition duration-500 ease-in hover:text-white"
+          >Pitanja</a
+        >
+        <a href="#" class="transition duration-500 ease-in hover:text-white"
+          >Za organizatore</a
+        >
+      </div>
+
+      <div id="mobile-menu" class="flex lg:hidden">
+        <img src="./src/images/hamburger.svg" alt="" class="w-10 h-10 mr-10" />
+      </div>
+
+      <div class="w-[20%] hidden lg:flex justify-center space-x-8 items-center">
+        <img src="./src/images/capa.svg" alt="" class="w-10 h-10" />
+        <button
+          class="px-10 py-4 text-xl transition duration-500 ease-in rounded-full bg-primaryColor hover:bg-white hover:text-backgroundDark text-backgroundDark"
+        >
+          Registruj se
+        </button>
+      </div>
+    </nav>
+    <div
+      class="z-0 flex items-center justify-center w-full h-32 text-5xl font-bold bg-primaryColor py-30 text-backgroundDark"
+    >
+      DOGAĐAJI
+    </div>
+
+    <section id="events">
+      <div class="flex">
+        <div
+          id="sidebar"
+          class="z-10 hidden h-full min-h-screen mx-16 -mt-12 text-center text-white w-80 bg-secondaryColor lg:block"
+        >
+          <h1 class="mt-20 mb-4 text-2xl font-bold">Kategorije</h1>
+          <div class="flex flex-col space-y-2 text-lg">
+            <a class="flex items-center justify-center" href="#"
+              >Muzika
+              <img src="/src/images/arrow.svg" alt="" class="ml-2" />
+            </a>
+            <a class="flex items-center justify-center" href="#"
+              >Festivali
+              <img src="/src/images/arrow.svg" alt="" class="ml-2" />
+            </a>
+            <a class="flex items-center justify-center" href="#"
+              >Kultura
+              <img src="/src/images/arrow.svg" alt="" class="ml-2" />
+            </a>
+            <a class="flex items-center justify-center" href="#"
+              >Ostalo
+              <img src="/src/images/arrow.svg" alt="" class="ml-2" />
+            </a>
+          </div>
+        </div>
+        <div id="content" class="w-full mx-10 mt-32 md:mr-36">
+          <h1 class="flex items-center text-2xl font-bold">
+            Sadržaj
+            <div class="w-full h-[1px] bg-backgroundDark ml-2"></div>
+          </h1>
+
+          <div class="flex flex-wrap gap-10 mt-10 lg:gap-x-10 xl:gap-x-20">
+            <div
+              id="event-card-1"
+              class="flex-none w-full lg:w-[40%] border-4 border-solid shadow-xl cursor-pointer border-backgroundDark/5 bg-cardColor"
+            >
+              <img src="src/images/tea.png" class="px-4 pt-4" alt="" />
+              <h6 class="mt-2 font-bold text-center text-primaryColor">
+                Muzika
+              </h6>
+              <h1 class="mt-2 font-bold text-center uppercase">Aqua club</h1>
+              <h1 class="mt-2 mb-2 font-bold text-center uppercase">
+                20.00 KM
+              </h1>
+            </div>
+            <div
+              id="event-card-2"
+              class="flex-none w-full lg:w-[40%] border-4 border-solid shadow-xl cursor-pointer border-backgroundDark/5 bg-cardColor"
+            >
+              <img src="src/images/winterfest.png" class="px-4 pt-4" alt="" />
+              <h6 class="mt-2 font-bold text-center text-primaryColor">
+                Kultura
+              </h6>
+              <h1 class="mt-2 font-bold text-center uppercase">
+                Narodno pozorište Sarajevo
+              </h1>
+              <h1 class="mt-2 mb-2 font-bold text-center uppercase">
+                20.00 - 50.00 KM
+              </h1>
+            </div>
+            <div
+              id="event-card-3"
+              class="flex-none w-full lg:w-[40%] border-4 border-solid shadow-xl cursor-pointer border-backgroundDark/5 bg-cardColor"
+            >
+              <img src="src/images/mraz.png" class="px-4 pt-4" alt="" />
+              <h6 class="mt-2 font-bold text-center text-primaryColor">
+                Kultura
+              </h6>
+              <h1 class="mt-2 font-bold text-center uppercase">
+                Pozorište mladih Sarajevo
+              </h1>
+              <h1 class="mt-2 mb-2 font-bold text-center uppercase">
+                15.00 KM
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="px-8 pt-10 mt-10 bg-secondaryColor text-primaryColor">
+      <div class="flex flex-wrap space-x-8">
+        <div class="w-[30%]">
+          <p class="font-bold text-primaryColor">Prijavi se za Newsletter:</p>
+          <input
+            type="text"
+            placeholder="Unesite Svoj Email"
+            class="w-3/4 px-2 py-4 mt-4 bg-primaryColor text-secondaryColor placeholder:text-secondaryColor"
+          />
+          <img src="src/images/payment.png" class="mt-4" alt="" />
+        </div>
+        <div class="w-[20%] flex flex-col">
+          <h3 class="font-bold uppercase">Korisnici</h3>
+          <a href="#">Početna</a>
+          <a href="#">Događaji</a>
+          <a href="#">Korpa</a>
+          <a href="#">Često postavljena pitanja</a>
+        </div>
+        <div class="w-[20%] flex flex-col">
+          <h3 class="font-bold uppercase">Organizatori</h3>
+          <a href="#">Unos novog događaja</a>
+          <a href="#">Korištenje usluga smještaja</a>
+          <a href="#">Promocija događaja</a>
+          <a href="#">Recenzije</a>
+        </div>
+        <div class="w-[20%] flex flex-col">
+          <h3 class="font-bold uppercase">Društvene mreže</h3>
+          <div class="flex mt-4 space-x-3">
+            <img src="src/images/facebook.svg" class="w-8 h-8" alt="" />
+            <img src="src/images/linkedin.svg" class="w-8 h-8" alt="" />
+            <img src="src/images/instagram.svg" class="w-8 h-8" alt="" />
+          </div>
+          <h3 class="mt-6 font-bold uppercase">Kontakt</h3>
+          <p class="font-bold">info@sarajevoevents.ba</p>
+        </div>
+      </div>
+      <p class="mt-4 font-bold text-center">© “Sarajevo Events” d.o.o. 2023</p>
+    </footer>
+  </body>
+</html>

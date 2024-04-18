@@ -796,6 +796,10 @@ video {
   flex: none;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

@@ -788,6 +788,10 @@ video {
   width: 40%;
 }
 
+.w-\[30rem\] {
+  width: 30rem;
+}
+
 .flex-none {
   flex: none;
 }

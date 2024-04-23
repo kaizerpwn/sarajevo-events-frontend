@@ -6,7 +6,132 @@
     <title>Sarajevo Events</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
+  <body class="relative h-full+f2<1c">
+    <div
+      class="absolute inset-0 justify-center hidden bg-black/50"
+      id="modal_register"
+    >
+      <div
+        class="w-full max-w-4xl p-8 bg-secondaryColor rounded-2xl max-h-[36rem] mt-60"
+      >
+        <div class="flex justify-between">
+          <h1 class="mb-8 text-5xl font-bold text-center text-primaryColor">
+            Registracija
+          </h1>
+          <img
+            src="src/images/close.svg"
+            class="w-12 h-12 cursor-pointer"
+            alt=""
+            id="close_modal_button"
+          />
+        </div>
+
+        <div class="grid grid-cols-2 gap-8">
+          <div class="space-y-2">
+            <div>
+              <label for="ime" class="block text-sm font-medium text-white"
+                >Ime*:</label
+              >
+              <input
+                type="text"
+                class="block w-full px-4 py-3 mt-1 rounded-lg"
+                placeholder="Unesite ime"
+                id="ime"
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div>
+              <label for="email" class="block text-sm font-medium text-white"
+                >Email*:</label
+              >
+              <input
+                type="email"
+                required
+                class="block w-full px-4 py-3 mt-1 rounded-lg"
+                placeholder="Unesite email"
+                id="email"
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div>
+              <label for="prezime" class="block text-sm font-medium text-white"
+                >Prezime*:</label
+              >
+              <input
+                type="text"
+                class="block w-full px-4 py-3 mt-1 rounded-lg"
+                placeholder="Unesite prezime"
+                id="prezime"
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div>
+              <label for="lozinka" class="block text-sm font-medium text-white"
+                >Lozinka*:</label
+              >
+              <input
+                type="password"
+                class="block w-full px-4 py-3 mt-1 rounded-lg"
+                placeholder="Unesite lozinku"
+                id="lozinka"
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div>
+              <label
+                for="broj_telefona"
+                class="block text-sm font-medium text-white"
+                >Broj telefona*:</label
+              >
+              <input
+                type="tel"
+                class="block w-full px-4 py-3 mt-1 rounded-lg"
+                placeholder="Unesite broj telefona"
+                id="broj_telefona"
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div>
+              <label
+                for="potvrda_lozinke"
+                class="block text-sm font-medium text-white"
+                >Potvrda lozinke*:</label
+              >
+              <input
+                type="password"
+                class="block w-full px-4 py-3 mt-1 rounded-lg"
+                placeholder="Unesite lozinku"
+                id="potvrda_lozinke"
+              />
+            </div>
+          </div>
+
+          <div class="col-span-2">
+            <p class="mb-2 -mt-4 text-red-400" id="error_message"></p>
+            <div class="flex items-center justify-center">
+              <input type="checkbox" id="terms" class="rounded-xl w-7 h-7" />
+              <label for="terms" class="ml-2 text-lg text-white"
+                >Slažem se sa uslovima korištenja platforme.</label
+              >
+            </div>
+
+            <button
+              type="submit"
+              id="button_submit_register"
+              class="flex justify-center py-4 mx-auto mt-4 font-bold transition duration-500 ease-in rounded-full w-60 hover:text-secondaryColor hover:bg-white text-secondaryColor bg-primaryColor"
+            >
+              Registruj se
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav
       class="flex items-center justify-between w-full h-32 font-bold uppercase bg-backgroundDark text-primaryColor"
     >
@@ -20,10 +145,14 @@
         </a>
       </div>
       <div class="w-[60%] hidden justify-center lg:flex md:space-x-8">
-        <a href="#" class="transition duration-500 ease-in hover:text-white"
+        <a
+          href="index.html"
+          class="transition duration-500 ease-in hover:text-white"
           >Početna</a
         >
-        <a href="#" class="transition duration-500 ease-in hover:text-white"
+        <a
+          href="events.html"
+          class="transition duration-500 ease-in hover:text-white"
           >Događaji</a
         >
         <a href="#" class="transition duration-500 ease-in hover:text-white"
@@ -41,6 +170,7 @@
       <div class="w-[20%] hidden lg:flex justify-center space-x-8 items-center">
         <img src="./src/images/capa.svg" alt="" class="w-10 h-10" />
         <button
+          id="button_register"
           class="px-10 py-4 text-xl transition duration-500 ease-in rounded-full bg-primaryColor hover:bg-white hover:text-backgroundDark text-backgroundDark"
         >
           Registruj se
@@ -172,5 +302,7 @@
       </div>
       <p class="mt-4 font-bold text-center">© “Sarajevo Events” d.o.o. 2023</p>
     </footer>
+
+    <script src="/src/js/script.js"></script>
   </body>
 </html>
